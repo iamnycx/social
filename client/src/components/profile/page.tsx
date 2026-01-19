@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { type Key } from 'react';
 import Posts from './posts';
 import Axios from '@/lib/axios';
 import type { UserDetailType } from '@/types';
@@ -13,7 +13,7 @@ export default function Profile() {
 		});
 	}, []);
 
-	const handleRemovePost = (id: number) => {
+	const handleRemovePost = (id: Key) => {
 		setData((prev) => {
 			if (!prev) return prev;
 			return {

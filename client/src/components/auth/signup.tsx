@@ -7,7 +7,6 @@ import Axios from '@/lib/axios';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 import { UserRoundIcon, X } from 'lucide-react';
-import { Select } from '../ui/select';
 
 export default function Signup({ setActiveCard }: { setActiveCard: Function }) {
 	const [name, setName] = React.useState('');

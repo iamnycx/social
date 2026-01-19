@@ -15,7 +15,7 @@ const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/webp'];
 export default function CreatePost({
 	setCreatePostOpen,
 }: {
-	setCreatePostOpen: (value: boolean) => {};
+	setCreatePostOpen: (value: boolean) => void;
 }) {
 	const [preview, setPreview] = useState<string | null>(null);
 	const [caption, setCaption] = useState<string>('');

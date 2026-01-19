@@ -1,7 +1,7 @@
 import type { UserPostDataType } from '@/types';
 import Card from '../card';
 import { Button } from '../ui/button';
-import React from 'react';
+import React, { type Key } from 'react';
 import Axios from '@/lib/axios';
 import { toast } from 'sonner';
 
@@ -10,7 +10,7 @@ export default function PostCard({
 	onDelete,
 }: {
 	data: UserPostDataType;
-	onDelete?: (id: number) => void;
+	onDelete?: (id: Key) => void;
 }) {
 	const [confirmButton, setConfirmButton] = React.useState(false);
 

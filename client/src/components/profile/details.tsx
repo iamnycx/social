@@ -5,7 +5,7 @@ import { handleLogout } from '@/lib/auth';
 import { Input } from '../ui/input';
 import React from 'react';
 import type { UserDetailType } from '@/types';
-import { Divide, PencilLineIcon } from 'lucide-react';
+import { PencilLineIcon } from 'lucide-react';
 import Axios from '@/lib/axios';
 import { toast } from 'sonner';
 

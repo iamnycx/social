@@ -1,12 +1,13 @@
 import type { UserPostsType } from '@/types';
 import PostCard from './post-card';
+import type { Key } from 'react';
 
 export default function Posts({
 	posts,
 	onDelete,
 }: {
 	posts: UserPostsType | undefined;
-	onDelete?: (id: number) => void;
+	onDelete?: (id: Key) => void;
 }) {
 	return (
 		<div className='w-2xl'>

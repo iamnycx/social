@@ -1,15 +1,15 @@
-import { Outlet } from "react-router-dom";
-import NavBar from "./components/navbar";
+import { Outlet } from 'react-router-dom';
+import NavBar from './components/navbar';
 
 export default function PrivateLayout({
-  setCreatePostOpen,
+	setCreatePostOpen,
 }: {
-  setCreatePostOpen: (value: string) => {};
+	setCreatePostOpen: (value: boolean) => void;
 }) {
-  return (
-    <>
-      <NavBar setCreatePostOpen={setCreatePostOpen} />
-      <Outlet />
-    </>
-  );
+	return (
+		<>
+			<NavBar setCreatePostOpen={setCreatePostOpen} />
+			<Outlet />
+		</>
+	);
 }
