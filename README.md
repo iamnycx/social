@@ -21,7 +21,6 @@ A full-stack social media application built with React and Django, featuring use
 -   **TypeScript** - Type-safe JavaScript
 -   **Vite** - Fast build tool and development server
 -   **Tailwind CSS** - Utility-first CSS framework
--   **Radix UI** - Accessible component primitives
 -   **React Router** - Client-side routing
 -   **Axios** - HTTP client for API requests
 -   **Lucide React** - Beautiful icons
@@ -55,7 +54,7 @@ Before running this application, make sure you have the following installed:
 -   **PostgreSQL** (v13 or higher) - [Download here](https://postgresql.org/)
 -   **Docker** (optional, for database container) - [Download here](https://docker.com/)
 
-## 🏃‍♂️ Running Locally
+## Running Locally
 
 ### 1. Clone the Repository
 
@@ -228,29 +227,6 @@ python manage.py test
 cd client
 npm run test  # If configured
 ```
-
-## Deployment
-
-### Frontend
-
-Build the React app for production:
-
-```bash
-cd client
-npm run build
-```
-
-The built files will be in the `dist/` directory.
-
-### Backend
-
-For production deployment, consider using:
-
--   **Gunicorn** as WSGI server
--   **Nginx** as reverse proxy
--   **PostgreSQL** in production
--   **AWS S3** or similar for media files
--   **Redis** for caching (optional)
 
 ## Contributing
 
