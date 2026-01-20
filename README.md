@@ -1,4 +1,4 @@
-# Social Network
+# Lume
 
 A full-stack social media application built with React and Django, featuring user authentication, post creation, image uploads, and interactive feeds with like/dislike functionality.
 
